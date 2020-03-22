@@ -1,0 +1,358 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+html, body, .wrapper {
+    height: 100%;
+}
+.wrapper {
+    position: relative;
+}
+.header {
+    width: 100%;
+    height: 70px;
+    background-color: #354457;
+}
+.header .logo {
+    width: 200px;
+    height: 70px;
+    line-height: 70px;
+    font-size: 14px;
+    color: #b3bcc5;
+    padding-left: 20px;
+}
+
+.header .logo img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+.left-menu {
+    width: 200px;
+    height: calc(100% - 70px);
+    background-color: #4d5e70;
+    color: #b3bcc5;
+    display: inline-block;
+    position: relative;
+    /* z-index: 1; */
+}
+.left-menu dl dt {
+    font-weight: bold;
+    padding-left: 8px;
+}
+.left-menu dl dt, .left-menu dl dd {
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+}
+.left-menu dl dd {
+    padding-left: 30px;
+    cursor: pointer;
+}
+.left-menu dl dd:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #354457;
+}
+.left-menu dl dd.active {
+    background-color: #ddd;
+    color: #354457;
+}
+
+.right-content {
+    position: absolute;
+    min-width: 500px;
+    width: calc(100% - 200px);
+    height: calc(100% - 70px);
+    margin-left: 200px;
+    top: 70px;
+    background-color: #eee;
+}
+.right-content .content {
+    display: none;
+}
+.right-content .content.content-active {
+    display: block;
+}
+.content.add-student {
+    margin: 50px auto;
+    width: 400px;
+    /* border: 1px solid #000; */
+}
+.content form label {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    margin-right: 10px;
+}
+.content form label.radio-label {
+    width: 20px;
+}
+.content form div {
+    margin: 10px 0;
+}
+.content form label, .content form input {
+    font-size: 16px;
+}
+.content form .btn {
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 10px;
+}
+.content table {
+    width: 100%;
+    text-align: center;
+}
+.content table thead {
+    background-color: #e3e8ee;
+    color: #646987;
+    font-size: 14px;
+}
+.content table tbody {
+    background-color: #fff;
+    font-size: 14px;
+}
+tr {
+    height: 30px;
+    line-height: 30px;
+}
+table tr td .btn {
+    padding: 3px 10px;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #5cb85c;
+}
+table tr td .btn.edit {
+    background-color: #5cb85c;
+}
+table tr td .btn.edit:hover {
+    color: #fff;
+    background-color: #398439;
+    border-color: #255625
+}
+table tr td .btn.del {
+    background-color: #d9534f;
+}
+
+table tr td .btn.del:hover {
+    color: #fff;
+    background-color: #c9302c
+}
+.button {
+    font-size: 0;
+}
+.dialog {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: none;
+}
+.dialog.show {
+    display: block;
+}
+.dialog .mask {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.dialog .dialog-content {
+    width: 500px;
+    height: 450px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -250px;
+    margin-top: -225px;
+    padding: 10px;
+}
+.dialog .dialog-content form {
+    width: 400px;
+    margin: 0 auto;
+}
+*{
+    margin:0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+*{
+    margin:0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+.page{
+	width:500px;
+	margin:100px auto;
+	color: #ccc;
+}
+.page a{
+	display: inline-block;
+	color: #428bca;
+	height: 25px;
+	line-height: 25px;
+	padding: 0 10px;
+	border: 1px solid #ddd;
+	margin: 0 2px;
+	border-radius: 4px;
+	vertical-align: middle;
+}
+.page a:hover{
+	border: 1px solid #428bca;
+}
+.page .current{
+	display: inline-block;
+	height: 25px;
+	line-height: 25px;
+	padding: 0 10px;
+	margin: 0 2px;
+	color: #fff;
+	background-color: #428bca;
+	border: 1px solid #428bca;
+	border-radius: 4px;
+	vertical-align: middle;
+}
+.page .disabled{
+	display: inline-block;
+	height: 25px;
+	line-height: 25px;
+	padding: 0 10px;
+	margin: 0 2px;
+	color: #bfbfbf;
+	background: #f2f2f2;
+	border: 1px solid #bfbfbf;
+	border-radius: 4px;
+	vertical-align: middle;
+}
+.page{
+	width:500px;
+	/*height:25px;*/
+	margin:0px auto;
+	padding-top:200px;
+	/*border:1px solid;*/
+}
+.page a{
+	display: inline-block;
+	color:#4d5e70;
+	height:25px;
+	line-height:25px;
+	padding:0 10px;
+	border:1px solid #ddd;
+	margin:0 2px;
+	border-radius:4px;
+	vertical-align:middle;
+}
+.page a:hover{
+	border:1px solid #428bca;
+}
+.page .disabled{
+	display: inline-block;
+	height:25px;
+	line-height:25px;
+	padding:0 10px;
+	margin:0 2px;
+	color:#bfbfbf;
+	border:1px solid #bfbfbf;
+	background:#f2f2f2;
+	border-radius:4px;
+	vertical-align:middle;
+}
+.page .current{
+	display: inline-block;
+	height:25px;
+	line-height:25px;
+	padding:0 10px;
+	margin:0 2px;
+	color:#fff;
+	background-color:#428bca;
+	border:1px solid #428bca;
+	border-radius:4px;
+	vertical-align:middle;
+}
+
+
+
+.search {
+    height: 60px;
+    line-height: 60px;
+    padding: 0 10px;
+}
+
+.search label {
+    font-size: 16px;
+    color: #646987;
+    font-weight: 800;
+}
+
+.search #search-word{
+    font-size: 16px;
+    height: 30px;
+    width: 200px;
+    border: none;
+}
+
+.search #search-submit {
+    height: 28px;
+    line-height: 28px;
+    padding: 0 10px;
+    outline: none;
+    display: inline-block;
+    border: none;
+    background-color: #354457;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+.turnPage{
+    width:440px;
+    /* height: 30px; */
+    /* border: 1px solid black; */
+    position: absolute;
+    bottom: 15px;
+    left:280px;
+    vertical-align: middle;
+}
+.turnPage .pre{
+    display: inline-block;
+    float: left;
+    width: 50px;
+    position: relative;
+    left: 0;
+}
+.turnPage .next{
+    display: inline-block;
+    float: right;
+    width: 50px;
+    position: relative;
+    right: -1;
+}
+.turnPage span{
+    float: left;
+}
+.turnPage li{
+    float: left;
+    display: inline-block;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    margin: 5px 10px;
+    cursor: pointer;
+    border-radius: 50%;     
+}
+.turnPage .cur-page{
+    background-color: aqua
+}
